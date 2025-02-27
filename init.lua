@@ -231,18 +231,18 @@ require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'nyoom-engineering/oxocarbon.nvim',
   {
-    "sphamba/smear-cursor.nvim",
-  
+    'sphamba/smear-cursor.nvim',
+
     opts = {
       -- Smear cursor when switching buffers or windows.
       -- smear_between_buffers = true,
-  
+
       -- Smear cursor when moving within line or to neighbor lines.
       -- smear_between_neighbor_lines = true,
-  
+
       -- Draw the smear in buffer space instead of screen space when scrolling
       -- scroll_buffer_space = true,
-  
+
       -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
       -- Smears will blend better on all backgrounds.
       -- legacy_computing_symbols_support = false,
@@ -911,11 +911,6 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
-      require('tokyonight').setup {
-        styles = {
-          comments = { italic = false }, -- Disable italics in comments
-        },
-      }
 
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
