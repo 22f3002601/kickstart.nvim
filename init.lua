@@ -231,6 +231,19 @@ require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'nyoom-engineering/oxocarbon.nvim',
   {
+    'max397574/better-escape.nvim',
+    config = function()
+      require('better_escape').setup {
+        timeout = 200, -- time in ms
+        mappings = {
+          i = {
+            j = { k = '<Esc>' },
+          },
+        },
+      }
+    end,
+  },
+  {
     'sphamba/smear-cursor.nvim',
 
     opts = {
